@@ -4,29 +4,32 @@
   "main": "app.js",
   "license": "MIT",
   "type": "module",
-  "dependencies": {
-    "@koa/cors": "^3.1.0",
-    "@koa/router": "^10.1.1",
-    "axios": "^0.21.1",
-    "koa": "^2.13.1",
-    "koa-body": "^4.2.0",
-    "node-html-parser": "^4.1.4"
-  },
   "scripts": {
     "prepare": "husky install",
     "dev": "nodemon app.js"
   },
+  "dependencies": {
+    "@koa/cors": "^3.3.0",
+    "@koa/router": "^10.1.1",
+    "axios": "^0.27.2",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "node-html-parser": "^5.3.3"
+  },
   "devDependencies": {
-    "nodemon": "^2.0.12",
-    "prettier": "^2.3.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.2",
-    "pinst": "^2.1.6",
-    "pretty-quick": "^3.1.1"
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.18",
+    "pinst": "^3.0.0",
+    "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --cache --fix"
   }
 }
